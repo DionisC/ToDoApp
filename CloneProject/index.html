@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+   
+  </head>
+  <body>
+
+    <div id="add-task" class="">
+      <div id="add-todo">
+        <h3>Add ToDo</h3>
+        <input type="text" name="" id="input" placeholder="Write your task!" onkeypress="isPressed(event)" maxlength="50">
+        <button id="done-btn" onclick="completeTodo();">Done</button>
+        <button id="cancel" onclick="cancelTodo()">Cancel</button>
+      </div>
+    </div>
+    <div id="edit-card" class="">
+      <div class="edit-comp">
+        <h2>Edit ToDo</h2>
+        <input type="text" id="edit-input" maxlength="50">
+        <button id="done-btn" onclick="completeTodoEdit()">Done</button>
+        <button id="cancel" onclick="cancelTodoEdit()">Cancel</button>
+      </div>
+     
+    </div> 
+
+
+    <div class="container">
+
+      <h1>To Do App</h1>
+
+      <button  id="add-btn" onclick="addTask()">Add Task</button>
+        
+    </div>
+
+    <div class="todos">
+      <h2>Your ToDo's</h2>
+    </div>
+
+    <div class="task-container">
+      <div id="tasks" class="">
+
+      </div> 
+    </div>
+  </body>
+</html>
+
+<!-- <div class="card">
+      <div class="comp">
+        <div class="title">
+          <div class="btn">
+            <button id="edit-done">Done</button>
+            <button id="edit-cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
